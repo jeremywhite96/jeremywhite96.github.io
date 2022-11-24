@@ -8,7 +8,7 @@ my-blog/data/headerNavLinks.js
 my-blog/data/siteMetadata.js
 
 # More editing
-Personalize `authors/default.md` (main author)
+Personalize `authors/default.md` (my information)
 
 # Project Overview Page with links
 Modify `projectsData.js`

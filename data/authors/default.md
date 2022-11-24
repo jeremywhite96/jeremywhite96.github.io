@@ -1,8 +1,8 @@
 ---
-name: Tails Azimuth
+name: Jeremy White
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
+occupation: UI / UX
+company: d e l e t e  m e 
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
