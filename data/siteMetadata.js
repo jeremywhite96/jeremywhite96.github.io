@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Jeremy White',
   author: 'Jeremy White',
   headerTitle: 'Jeremy White',
-  description: 'Welcome to my personal website!',
+  description: 'Personal website of Jeremy White',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',

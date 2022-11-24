@@ -11,7 +11,7 @@
 }
 
 .footnotes {
-  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
 }
 
 .csl-entry {
@@ -22,4 +22,65 @@
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.page-titleholder {
+  @apply space-y-2 pt-6 pb-8 md:space-y-5;
+}
+
+.page-title {
+  @apply text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14;
+}
+
+.customheight {
+  height: 75vh;
+}
+
+.navbutton {
+  display: flex;
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  /* margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse))); */
+  border-radius: 0.25rem;
+  border-width: 2px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: center;
+  border-color: currentColor;
+}
+
+.navbutton:hover {
+  @apply -translate-x-1 -translate-y-2 border-2 bg-pink-400 bg-clip-text bg-blend-difference shadow-[0.25rem_0.5rem_0px_-0rem_rgba(0,0,0,0.1)] shadow-current transition-shadow transition ease-out;
+}
+
+.text-bg-fx {
+  background-repeat: no-repeat;
+  will-change: background-size;
+  transition: background-size 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.text-bg-fx:hover {
+  background-size: 100% 100%;
+}
+
+.text-bg-fx--underline,
+.text-bg-fx--underline-bold {
+  text-decoration: underline;
+  text-underline-offset: 0.1rem;
+  background-size: 0% 100%;
+}
+
+.text-bg-fx--underline {
+  /* text underline size = 1px */
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+}
+
+.text-bg-fx--underline-bold {
+  @apply bg-gradient-to-r from-cyan-400 to-cyan-400;
+}
+
+.text-bg-fx--text-shadow:hover {
+  /* you can use this with the .text-bg-fx--underline effect */
+  text-shadow: 1px 1px #ffffff, -1px -1px #ffffff, 1px 1px #ffffff;
 }
