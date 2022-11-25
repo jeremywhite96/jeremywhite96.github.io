@@ -29,7 +29,7 @@ export default function Home({ posts }) {
         <div>
           <p>
             I recently completed a masters degree in User Experience Design at{' '}
-            <Link href="/" className="text-bg-fx text-bg-fx--underline-bold">
+            <Link href="/" className="text-bg-fx text-bg-fx--underline text-[#00819d]">
               Birmingham City University
             </Link>{' '}
             where I achieved a Distinction. This website is a place for me to display some of the
@@ -44,7 +44,6 @@ export default function Home({ posts }) {
           <Buttonlink linkURL="/about" buttonText="About Me" />
           <Buttonlink linkURL="/projects" buttonText="Projects" />
         </div>
-        g
       </div>
     </>
   )

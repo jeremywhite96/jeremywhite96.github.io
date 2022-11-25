@@ -59,25 +59,28 @@ input:-webkit-autofill:focus {
   background-repeat: no-repeat;
   will-change: background-size;
   transition: background-size 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-position: left bottom;
 }
 .text-bg-fx:hover {
-  background-size: 100% 100%;
+  background-size: 100% 15%;
+  text-decoration: none;
 }
 
 .text-bg-fx--underline,
 .text-bg-fx--underline-bold {
-  text-decoration: underline;
+  text-decoration: none;
+  text-decoration-style: dashed;
   text-underline-offset: 0.1rem;
-  background-size: 0% 100%;
+  background-size: 0% 15%;
 }
 
 .text-bg-fx--underline {
   /* text underline size = 1px */
-  @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+  @apply bg-gradient-to-t from-[#00819d] to-[#00819d] bg-opacity-100;
 }
 
 .text-bg-fx--underline-bold {
-  @apply bg-gradient-to-r from-cyan-400 to-cyan-400;
+  @apply bg-gradient-to-t from-[#00819d] to-[#00819d] bg-opacity-100;
 }
 
 .text-bg-fx--text-shadow:hover {

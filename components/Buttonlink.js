@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Buttonlink({ buttonText, linkURL }) {
   return (
-    <Link href={linkURL} className="navbutton">
+    <a href={linkURL} className="navbutton">
       <span className="px-1">{buttonText}</span>
       <div className="px-1">
         <svg
@@ -20,6 +20,6 @@ export default function Buttonlink({ buttonText, linkURL }) {
           />
         </svg>
       </div>
-    </Link>
+    </a>
   )
 }
