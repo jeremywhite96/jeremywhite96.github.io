@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
-import SectionContainer from '@/components/SectionContainer'
+import SectionProjectContainer from '@/components/SectionProjectContainer'
 import { BlogSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
@@ -11,19 +11,19 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   const { date, title } = frontMatter
 
   return (
-    <SectionContainer>
+    <SectionProjectContainer>
       <BlogSEO url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
       <ScrollTopAndComment />
       <article>
         <div>
           <header>
-            <div className="space-y-1 border-b border-gray-200 pb-10 text-center dark:border-gray-700">
+            <div className="text-Left space-y-1 pb-10">
               <dl>
                 <div>
-                  <dt className="sr-only">Published on</dt>
+                  {/* <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>{formatDate(date)}</time>
-                  </dd>
+                  </dd> */}
                 </div>
               </dl>
               <div>
@@ -31,15 +31,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </div>
             </div>
           </header>
-          <div
-            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0 "
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
+          <div className="pb-8" style={{ gridTemplateRows: 'auto 1fr' }}>
+            <div className=" xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             </div>
-            <Comments frontMatter={frontMatter} />
-            <footer>
+            {/* <Comments frontMatter={frontMatter} /> */}
+            {/* <footer>
               <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
                 {prev && (
                   <div className="pt-4 xl:pt-8">
@@ -62,10 +59,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
-            </footer>
+            </footer> */}
+            {/* Footer is actually a navigation thing to say {article name}➡️ */}
           </div>
         </div>
       </article>
-    </SectionContainer>
+    </SectionProjectContainer>
   )
 }

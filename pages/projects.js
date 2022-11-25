@@ -2,16 +2,17 @@ import siteMetadata from '@/data/siteMetadata'
 import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
+import PageTitle from '@/components/PageTitle'
 
 export default function Projects() {
   return (
     <>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div>
         <div className="page-titleholder">
-          <h1 className="page-title">Projects</h1>
+          <PageTitle className="page-title">Projects</PageTitle>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Showcase your projects with a hero image (16 x 9)
+            A selection of work I produced during my masters program and in my own time.
           </p>
         </div>
         <div className="container py-12">

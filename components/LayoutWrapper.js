@@ -2,7 +2,7 @@ import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
 import Link from './Link'
-import SectionContainer from './SectionContainer'
+import SectionProjectContainer from './SectionProjectContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
@@ -11,7 +11,7 @@ import { useRouter } from 'next/router'
 const LayoutWrapper = ({ children }) => {
   const router = useRouter()
   return (
-    <SectionContainer>
+    <SectionProjectContainer>
       <div className="flex h-screen flex-col justify-between">
         <header className="flex items-center justify-between py-10">
           <div>
@@ -21,7 +21,8 @@ const LayoutWrapper = ({ children }) => {
                   <Logo />
                 </div> */}
                 <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">
-                {`jeremyw${router.asPath}`}{''}
+                  {`jeremyw${router.asPath}`}
+                  {''}
                 </div>
                 {/* {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
@@ -52,7 +53,7 @@ const LayoutWrapper = ({ children }) => {
         <main className="mb-auto">{children}</main>
         <Footer />
       </div>
-    </SectionContainer>
+    </SectionProjectContainer>
   )
 }
 
