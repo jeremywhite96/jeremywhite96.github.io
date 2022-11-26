@@ -5,8 +5,8 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Rotatehead from '@/components/rotatehead'
-import Buttonlink from '@/components/buttonlink'
 import NewsletterForm from '@/components/NewsletterForm'
+import Buttonlink from '@/components/Buttonlink'
 
 const MAX_DISPLAY = 5
 
