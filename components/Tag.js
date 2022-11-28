@@ -3,9 +3,9 @@ import kebabCase from '@/lib/utils/kebabCase'
 
 const Tag = ({ text }) => {
   return (
-    <a className="mr-3 list-inside list-disc text-sm font-medium uppercase">
+    <h2 className="mr-3 list-inside list-disc text-sm font-medium uppercase">
       {text.split(' ').join(' ')}
-    </a>
+    </h2>
   )
 }
 

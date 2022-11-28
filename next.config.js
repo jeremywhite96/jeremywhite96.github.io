@@ -1,5 +1,6 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
+  experimental: { images: { layoutRaw: true } },
 })
 
 // You might need to insert additional domains in script-src if you are using external services
@@ -15,6 +16,7 @@ const ContentSecurityPolicy = `
 `
 
 const securityHeaders = [
+  
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
   {
     key: 'Content-Security-Policy',
@@ -52,12 +54,15 @@ const securityHeaders = [
   },
 ]
 
+
+
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
+  experimental: { images: { layoutRaw: true } },
   async headers() {
     return [
       {
