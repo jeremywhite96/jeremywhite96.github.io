@@ -3,16 +3,16 @@ import Image from '@/components/Image'
 const  BubPersonas= () => {
     return ( 
         <div className='sm:col-span-12 grid sm:grid-cols-12 grid-cols-6 xl:flex-col flex auto-rows-auto flex-row gap-4'>
-                <div className='col-span-3 relative shrink'>
-                    <div className='h-fit w-fit pb-2 float-left'>
-                    <Image src='/static/images/bubble/userrequirements/Rosie.png' className="object-contain object-left xl:h-full xl:w-full" width="750" height="1000" />
-                    </div>
+                <div className='col-span-3 relative'>
+                    <div className='h-fit w-fit pb-2'>
+                        <Image src='/static/images/bubble/userrequirements/Rosie.png' className="object-contain object-left h-full w-full" width="750" height="1000" />
+                        </div>
                     <div>
                     <span className='font-bold'>Rosie Birch</span><br />
                     Recent Graduate <br />
                     Amblyopia</div>
                 </div>
-                <div className='col-span-3 relative shrink'>
+                <div className='col-span-3 relative'>
                     <div className='h-fit w-fit pb-2'>
                         <Image src='/static/images/bubble/userrequirements/Samia.png' className="object-contain object-left h-full w-full" width="750" height="1000" />
                         </div>
@@ -21,7 +21,7 @@ const  BubPersonas= () => {
                     Interrnational Student <br />
                     Homesick</div>
                 </div>
-                <div className='col-span-3 relative shrink'>
+                <div className='col-span-3 relative'>
                     <div className='h-fit w-fit pb-2'>
                         <Image src='/static/images/bubble/userrequirements/Matthew.png' className="object-contain object-left h-full w-full" width="750" height="1000" />
                         </div>
@@ -30,7 +30,7 @@ const  BubPersonas= () => {
                     Undergraduate Student<br />
                     Social Anxiety</p>
                 </div>
-                <div className='col-span-3 relative shrink'>
+                <div className='col-span-3 relative'>
                     <div className='h-fit w-fit pb-2'>
                         <Image src='/static/images/bubble/userrequirements/Connor.png' className="object-contain object-left h-full w-full" width="750" height="1000" />
                         </div>
