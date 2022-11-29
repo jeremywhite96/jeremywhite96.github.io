@@ -162,6 +162,10 @@ input:-webkit-autofill:focus {
   display: none;
 }
 
+.react-tabs__tab-panel {
+ @apply space-y-8
+}
+
 .react-tabs__tab-panel--selected {
   display: block;
 }
