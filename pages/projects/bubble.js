@@ -8,6 +8,8 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import BubPersonas from '@/components/bubble/BubPersonas'
+import BubHTA from '@/components/bubble/BubHTA'
+import { Tabs } from 'react-tabs'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -31,12 +33,12 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
               </div>
             </div>
           </header>
-          <div className='py-2 xl:grid xl:grid-cols-12 xl:gap-x-6 xl:divide-x h-full dark:divide-gray-700'>
-            <div className="prose max-w-none pt-2 pb-2 dark:prose-dark auto-cols-max col-span-7">
+          <div className='py-2 lg:grid lg:grid-cols-12 h-full gap-12 space-y-2'>
+            <div className="prose max-w-none dark:prose-dark auto-cols-max col-span-7">
                 <div className='subheading'>Synopsis</div>
                 <h5>As part of my User Experience Design MSc we were tasked with designing and evaluating an app loosely around the theme of “health”. Following a short period of research our group settled on the idea of tackling isolation commonly found in students and young graduates when moving to a new area.</h5>
             </div>
-            <div className="prose max-w-none pt-2 pb-2 dark:prose-dark auto-cols-auto col-start-8 col-span-5 xl:px-4">
+            <div className="prose max-w-none dark:prose-dark auto-cols-max col-start-9 col-span-4">
             <div className='subheading'>Project Information</div>
                 <h5>Project Timeframe: 3 Months</h5>
                 <h5>Team Size: 2-3 Members</h5>
@@ -52,7 +54,7 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
                 </div>
             </div>
         <main className="pb-8 h-full">
-            <section className='w-full h-auto relative'>
+            <section className='w-full h-auto relative space-y-4'>
                 <div className="xl:grid xl:grid-cols-12 xl:pb-0">
                     <div className="prose max-w-none pt-10 pb-8 dark:prose-dark lg:col-span-5">
                     <div className='subheading'>User requirements</div>
@@ -60,6 +62,7 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
                         </div>
                 </div>
             <BubPersonas />
+            <BubHTA />
             </section>
           </main>
         </div>
