@@ -102,7 +102,7 @@ input:-webkit-autofill:focus {
 
 
 .react-tabs__tab-list {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 2px solid currentColor;
   margin: 0 0 10px;
   padding: 0;
 }
@@ -112,8 +112,9 @@ input:-webkit-autofill:focus {
 }
 
 .react-tabs__tab {
-  display: inline-block;
-  border: 1px solid transparent;
+  display: inline-flex;
+  border: 2px solid currentColor;
+  border-radius: 0.25rem 0.25rem 0 0;
   border-bottom: none;
   bottom: -1px;
   position: relative;
@@ -123,15 +124,19 @@ input:-webkit-autofill:focus {
 }
 
 .react-tabs__tab {
-@apply flex flex-row items-stretch text-center w-full
+@apply w-full text-center justify-center
 }
 
 
 .react-tabs__tab--selected {
   background: #fff;
-  border-color: #aaa;
-  color: black;
+  border-color: currentColor;
+  color: white;
   border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab--selected {
+@apply dark:bg-white bg-black dark:text-black
 }
 
 .react-tabs__tab--disabled {
