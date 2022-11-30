@@ -10,6 +10,8 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import BubPersonas from '@/components/bubble/BubPersonas'
 import BubHTA from '@/components/bubble/BubHTA'
 import { Tabs } from 'react-tabs'
+import BubIA from '@/components/bubble/BubIA'
+import BubSketches from '@/components/bubble/BubSketches'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -54,15 +56,28 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
                 </div>
             </div>
         <main className="pb-8 h-full">
-            <section className='w-full h-auto relative space-y-4'>
+            <section className='w-full h-auto relative space-y-12'>
                 <div className="xl:grid xl:grid-cols-12 xl:pb-0">
                     <div className="prose max-w-none pt-10 pb-8 dark:prose-dark lg:col-span-5">
                     <div className='subheading'>User requirements</div>
                     <p>As part of our process for determining the user requirements for the project, four personas were created. Two of the four personas had a specific impairment or accessibility concern.</p>
                         </div>
+                <BubPersonas />
                 </div>
-            <BubPersonas />
+            
             <BubHTA />
+            <BubIA />
+            </section>
+            <section>
+              <div className='pt-4'>
+              <div className='subheading'>Paper Prototyping</div>
+                  <div className='flex flex-row flex-wrap flex-grow'>
+                    <div className="prose max-w-none py-4 dark:prose-dark grow">{children}
+                    <h3>This is h2</h3>
+                    </div>
+                  </div>
+              </div>
+              <BubSketches />
             </section>
           </main>
         </div>
