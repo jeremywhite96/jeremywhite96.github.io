@@ -13,8 +13,8 @@ import { Tabs } from 'react-tabs'
 import BubIA from '@/components/bubble/BubIA'
 import BubSketches from '@/components/bubble/BubSketches'
 import BubWire from '@/components/bubble/BubWire'
-import BubHF1 from '@/components/bubble/BubHF1'
 import BubTest from '@/components/bubble/BubTest'
+import BubSUS from '@/components/bubble/BubSUS'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -83,10 +83,7 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
               {/* <BubSketches /> */}
             </section>
             <section>
-              <BubWire />
-            </section>
-            <section>
-              <BubHF1 />
+              <BubWire></BubWire>
             </section>
             <section>
               <BubTest />

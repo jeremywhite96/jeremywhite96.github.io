@@ -20,12 +20,13 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <ListLayout
-        posts={posts}
-        initialDisplayPosts={initialDisplayPosts}
-        pagination={pagination}
-        title="All Posts"
-      />
+      <header className="pt-6 pb-6">
+            <div className="text- space-y-1">
+              <div>
+                <PageTitle>Bubble</PageTitle>
+              </div>
+            </div>
+          </header>
     </>
   )
 }
