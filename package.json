@@ -25,6 +25,7 @@
     "mdx-bundler": "^8.0.0",
     "next": "^13.0.5",
     "next-themes": "^0.0.14",
+    "phosphor-react": "^1.4.1",
     "postcss": "^8.4.5",
     "preact": "^10.6.2",
     "react": "^18.2.0",

@@ -12,6 +12,9 @@ import BubHTA from '@/components/bubble/BubHTA'
 import { Tabs } from 'react-tabs'
 import BubIA from '@/components/bubble/BubIA'
 import BubSketches from '@/components/bubble/BubSketches'
+import BubWire from '@/components/bubble/BubWire'
+import BubHF1 from '@/components/bubble/BubHF1'
+import BubTest from '@/components/bubble/BubTest'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -77,7 +80,16 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
                     </div>
                   </div>
               </div>
-              <BubSketches />
+              {/* <BubSketches /> */}
+            </section>
+            <section>
+              <BubWire />
+            </section>
+            <section>
+              <BubHF1 />
+            </section>
+            <section>
+              <BubTest />
             </section>
           </main>
         </div>
