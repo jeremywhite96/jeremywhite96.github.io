@@ -30,7 +30,7 @@ const BubTest = () => {
                         <h1 className="subheading">System Usability Scale</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem fringilla ut morbi tincidunt augue interdum. Erat velit scelerisque in dictum non consectetur a erat nam.</p>
                     </div>
-                    <BubSUS className="grid flex flex-row col-span-8"/>
+                    {/* <BubSUS className="grid flex flex-row col-span-8"/> */}
                 </div>
             </section>
             <section>

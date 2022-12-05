@@ -28,10 +28,7 @@ export default function Home({ posts }) {
         </div>
         <div>
           <p>
-            I recently completed a masters degree in User Experience Design at{' '}
-            <Link href="/" className="text-bg-fx text-bg-fx--underline text-[#00819d]">
-              Birmingham City University
-            </Link>{' '}
+            I recently completed a masters degree in User Experience Design at Birmingham City University
             where I achieved a Distinction. This website is a place for me to display some of the
             work I completed during this program and additional projects I have completed in my own
             time. Have a look at the work I've done or learn more about me.

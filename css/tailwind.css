@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.backgrounds {
+@apply dark:bg-gray-900 bg-white
+},
+
 .task-list-item::before {
   @apply hidden;
 }
@@ -85,7 +89,7 @@ input:-webkit-autofill:focus {
 .text-bg-fx--underline-bold {
   text-decoration: none;
   text-decoration-style: dashed;
-  text-underline-offset: 0.1rem;
+  text-underline-offset: 0.2rem;
   background-size: 0% 15%;
 }
 
@@ -198,4 +202,65 @@ input:-webkit-autofill:focus {
 .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
   background: grey;
   margin-bottom: 30px;
+}
+
+/* ACCORDION */
+
+.accordion {
+@apply border-b-2 border-t-2 border-black dark:border-white
+}
+
+.accordion__item + .accordion__item {
+  @apply border-t-2 border-black dark:border-white
+}
+
+
+.accordion__button {
+  @apply bg-transparent text-current cursor-cell w-full text-left py-4 px-2 font-bold
+}
+
+.accordion__button:hover {
+  @apply bg-slate-200 dark:bg-gray-800
+}
+
+.accordion__button:before {
+  display: inline-block;
+  content: '';
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+  transform: rotate(45deg);
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  animation: fadein 0.35s ease-in;
+}
+
+.accordion__panel {
+  @apply py-4 px-2
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }

@@ -12,8 +12,8 @@ const LayoutWrapper = ({ children }) => {
   const router = useRouter()
   return (
     <SectionProjectContainer>
-      <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
+      <div className="flex h-full flex-col justify-between">
+        <header className="flex items-center justify-between pt-6 pb-4 backgrounds sticky top-0 z-40">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">

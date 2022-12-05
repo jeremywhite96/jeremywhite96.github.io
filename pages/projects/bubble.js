@@ -15,6 +15,7 @@ import BubSketches from '@/components/bubble/BubSketches'
 import BubWire from '@/components/bubble/BubWire'
 import BubTest from '@/components/bubble/BubTest'
 import BubSUS from '@/components/bubble/BubSUS'
+import BubSystems from '@/components/bubble/BubSystems'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -88,6 +89,7 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
             <section>
               <BubTest />
             </section>
+            <BubSystems />
           </main>
         </div>
       </article>
