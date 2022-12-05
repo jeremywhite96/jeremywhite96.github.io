@@ -40,7 +40,7 @@ export default function Home({ posts }) {
           <p>If you want to get in touch please feel free to contact me!</p>
         </div>
         <br />
-        <div className="flex justify-end space-x-4">
+        <div className='sm:flex sm:flex-row flex-col sm:space-x-4 space-y-4 sm:space-y-0 justify-end'>
           <Buttonlink linkURL="/about" buttonText="About Me" />
           <Buttonlink linkURL="/projects" buttonText="Projects" />
         </div>

@@ -37,7 +37,7 @@ input:-webkit-autofill:focus {
 }
 
 .customheight {
-  height: 75vh;
+ @apply md:h-[75vh]
 }
 
 .navbutton {
@@ -57,6 +57,17 @@ input:-webkit-autofill:focus {
 
 .navbutton:hover {
   @apply -translate-x-1 -translate-y-2 border-2 bg-pink-400 bg-clip-text bg-blend-difference shadow-[0.25rem_0.5rem_0px_-0rem_rgba(0,0,0,0.1)] shadow-current transition-shadow transition ease-out;
+}
+
+.morphout {
+  @apply group-hover:opacity-0 group-hover:duration-[750] group-hover:rotate-180 absolute
+}
+
+.morphin{
+  @apply opacity-0 group-hover:opacity-100 group-hover:duration-[750] group-hover:rotate-0 -rotate-90 group-hover:visible
+}
+.cardbutton:hover {
+  @apply -translate-x-2 -translate-y-2 border-2 bg-clip-text bg-blend-difference shadow-[0.5rem_0.5rem_0px_-0rem_rgba(0,0,0,0.1)] shadow-current transition-shadow transition ease-out;
 }
 
 .text-bg-fx {

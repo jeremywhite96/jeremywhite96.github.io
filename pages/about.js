@@ -26,8 +26,8 @@ export default function Home() {
           </div>
           <div className='col-span-6 py-8 space-y-4 border-t-2'>
             <h1 className='text-xl lg:text-2xl font-extrabold opacity-60'>Education</h1>
-            <h1 className='align-baseline'><span className='font-extrabold text-2xl lg:text-3xl'>User Experience Design MSc / Distinction </span><br />Birmingham City University</h1>
-            <h1><span className='font-extrabold text-2xl lg:text-3xl '>Industrial Product Design BSc / 2:1</span> <br />Aston University</h1>
+            <h1 className='align-baseline text-xl'><span className='font-extrabold text-2xl lg:text-3xl'>User Experience Design MSc / Distinction </span><br />Birmingham City University</h1>
+            <h1 className='text-xl'><span className='font-extrabold text-2xl lg:text-3xl '>Industrial Product Design BSc / 2:1</span> <br />Aston University</h1>
           </div>
           <div className='col-span-6 py-8 space-y-4 h-full justify-between flex flex-col border-t-2'>
             <div className='space-y-4'>
@@ -47,7 +47,7 @@ export default function Home() {
               <div className='col-span-1 space-y-2 border-t-2 py-8'>
                 <h1 className='align-baseline font-extrabold text-xl lg:text-2xl font-extrabold opacity-60 pb-2'>Skilled With</h1>
                 <ul className='grid lg:grid-cols-2  text-xl'>
-                  <li>Figma</li>
+                  <li>Figma </li>
                   <li>Photoshop</li>
                   <li>Illustrator</li>
                   <li>InDesign</li>

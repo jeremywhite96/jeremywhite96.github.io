@@ -2,6 +2,11 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  variants: {
+    extend: {
+      opacity: ['group-hover']
+    }
+  },
   experimental: {
     optimizeUniversalDefaults: true,
   },
