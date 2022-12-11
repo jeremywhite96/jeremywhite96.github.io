@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const BubWire = ({ }) => {
+const BubWire = () => {
     return (
         <div>
             <div className='pt-4'>

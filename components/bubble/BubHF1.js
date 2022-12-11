@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const BubHF1 = ({ }) => {
+const BubHF1 = () => {
     return (
         <div>
             <div className='pt-4'>
