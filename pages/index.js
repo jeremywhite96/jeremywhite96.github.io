@@ -23,7 +23,7 @@ export default function Home({ posts }) {
       <div className="customheight inline-block table-cell align-middle">
         <div className="page-titleholder">
           {/* Welcome Message Component */}
-          <Rotatehead />
+          <div><Rotatehead /></div>
           {/* / Welcome */}
         </div>
         <div>
