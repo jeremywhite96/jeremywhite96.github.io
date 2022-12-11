@@ -97,7 +97,7 @@ export default function CardBarChart() {
   
   return (
     <>
-      <div className="dark:bg-white bg-gray-100 border border-2 border-current rounded col-span-8">
+      <div className="dark:bg-white bg-gray-100 border-2 border-current rounded col-span-8">
         <div className="py-8 px-4 flex-auto">
           {/* Chart */}
           <div className="relative">

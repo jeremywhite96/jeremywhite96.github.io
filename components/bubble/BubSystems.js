@@ -16,7 +16,7 @@ const BubSystems = () => {
     return (
         <div className='space-y-8 py-8'>
             <h1 className='subheading'>Design Systems</h1>
-            <div className='grid grid-cols-12 gap-12'>
+            <div className='sm:grid grid-cols-12 gap-12'>
                 <div className='col-span-6 content-center'>
                     <Accordion preExpanded={['a']}>
                         <AccordionItem uuid="a">
@@ -57,24 +57,24 @@ const BubSystems = () => {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className='col-span-6 justify-end'>
+                <div className='col-span-6 justify-end hidden sm:block'>
                     <Image src="/static/images/bubble/system/examplebad.png" className="object-contain h-max w-full" width="500" height="500" />
                 </div>
             </div>
             <div>
                 <h1 className='subheading'>Translating V1 → V2</h1>
-                <div className='grid sm:grid-cols-3 md:gap-8'>
-                    <div className='col-span-1 space-y-2 py-8'>
+                <div className='sm:grid sm:grid-cols-3 gap-8 py-8'>
+                    <div className='col-span-1'>
                         <h1 className='align-baseline pb-2'>Decided to design for a single device:</h1>
-                        <ul className='list-disc list-outside'>
+                        <ul className='list-disc md:list-outside list-inside'>
                             <li>Apple iOS</li>
                             <li>Used Apple's documentation to inform our own design transition</li>
                         </ul>
                     </div>
-                    <div className='col-span-1 space-y-2 py-8'>
+                    <div className='col-span-1'>
                         <h1 className='align-baseline pb-2'>iOS apps are built using UIKit components, and strongly tied to the system.</h1>
                     </div>
-                    <div className='col-span-1 space-y-2 py-8'>
+                    <div className='col-span-1'>
                         <h1 className='align-baseline  pb-2'>Utilised standard Apple components in order to focus on designing and iterating on unique elements of our app</h1>
                     </div>
                 </div>
@@ -84,31 +84,31 @@ const BubSystems = () => {
             </div>
             <div>
                 <h1 className='subheading'>V1 → V2 - New Dimensions</h1>
-                <div className='grid grid-cols-4 gap-12 py-8'>
+                <div className='sm:grid grid-cols-3 gap-12 py-8'>
+                    <div className='col-span-3'>The original carousel navigation system led to a cramped and narrow feeling.<br />It also conflicted with Apple’s guidelines, interfering with the system wide margin navigation system.<br />New dimensions were created, including the maximum width of components.<br /><br />These dimensions enabled more considered design apporaches regarding spacing - a key complaint following the first usability test.</div>
                     <div className='col-span-1'><Image src="/static/images/bubble/wire/con1/Search Home.png" className="object-contain h-max w-full" width="500" height="500" /></div>
-                    <div className='col-span-1'>The original carousel navigation system led to a cramped and narrow feeling.<br /><br />It also conflicted with Apple’s guidelines, interfering with the system wide margin navigation system.<br /><br />New dimensions were created, including the maximum width of components.<br /><br />These dimensions enabled more considered design apporaches regarding spacing - a key complaint following the first usability test.</div>
                     <div className='col-span-1'><Image src="/static/images/bubble/wire/con1/Search Home.png" className="object-contain h-max w-full" width="500" height="500" /></div>
                     <div className='col-span-1'><Image src="/static/images/bubble/wire/con1/Search Home.png" className="object-contain h-max w-full" width="500" height="500" /></div>
                 </div>
             </div>
             <div>
                 <h1 className='subheading'>Event Card → V2</h1>
-                <div className='grid grid-cols-12 gap-12'>
+                <div className='sm:grid grid-cols-12 gap-12'>
                     <div className='col-span-8 bg-red-500'>_</div>
                     <div className='col-span-4 bg-red-500'>_</div>
                 </div>
             </div>
             <div>
                 <h1 className='subheading'>Scalable & Accessible</h1>
-                <div className='grid grid-cols-12 gap-12'>
+                <div className='sm:grid grid-cols-12 gap-12'>
                     <div className='col-span-4 bg-red-500'>_</div>
                     <div className='col-span-8 bg-red-500'>_</div>
                 </div>
             </div>
             <div>
                 <h1 className='subheading'>Group Card → V2</h1>
-                <div className='grid grid-cols-12 gap-12'>
-                    <div className='col-span-8 bg-red-500 grid grid-cols-2 gap-12'>
+                <div className='sm:grid grid-cols-12 gap-12'>
+                    <div className='col-span-8 bg-red-500 sm:grid grid-cols-2 gap-12'>
                         <div className='col-span-2'>description text here</div>
                         <div className='bg-red-900 col-span-1'>Image image image</div>
                         <div className='bg-red-900 col-span-1'>Image image image</div>
@@ -118,7 +118,7 @@ const BubSystems = () => {
             </div>
             <div>
                 <h1 className='subheading'>Moving to the rest of the app</h1>
-                <div className='grid grid-cols-12 gap-12'>
+                <div className='sm:grid grid-cols-12 gap-12'>
                     <div className='col-span-6 bg-red-500 grid grid-cols-3 gap-12'>
                         <div className='col-span-2 bg-red-900'>description text here</div>
                     </div>
@@ -128,8 +128,8 @@ const BubSystems = () => {
             </div>
             <div>
                 <h1 className='subheading'>Application of Colour</h1>
-                <div className='grid grid-cols-12 gap-12'>
-                    <div className='col-span-6 bg-red-500 grid grid-cols-3 gap-12'>
+                <div className='sm:grid grid-cols-12 gap-12'>
+                    <div className='col-span-6 bg-red-500 sm:grid grid-cols-3 gap-12'>
                         <div className='col-span-2 bg-red-900'>description text here</div>
                     </div>
                     <div className='col-span-3 bg-red-500'>Image image image Image image imageImage image image</div>
@@ -137,17 +137,15 @@ const BubSystems = () => {
                 </div>
             </div>
             <div>
-                <div className='grid grid-cols-12 gap-12'>
+                <div className='sm:grid grid-cols-12 gap-x-12 gap-y-8 flex-col-reverse flex'>
                     <div className='col-span-3 bg-red-500'>Image image image Image image imageImage image image</div>
                     <div className='col-span-3 bg-red-500'>Image image image Image image imageImage image image</div>
-                    <div className='col-span-6 bg-red-500 grid grid-cols-3 gap-12'>
-                        <div className='col-span-2 bg-red-900'>description text here</div>
-                    </div>
+                    <div className='col-span-6 bg-red-500'>description text here</div>
                 </div>
             </div>
             <div>
                 <h1 className='subheading'>V2 Colour Palette & Rules</h1>
-                <div className='grid grid-cols-12 gap-12'>
+                <div className='sm:grid grid-cols-12 gap-12'>
                     <div className='col-span-6 bg-red-500 gap-12'>
                         <div className='col-span-2'>description text here</div>
                     </div>
@@ -156,7 +154,7 @@ const BubSystems = () => {
             </div>
             <div>
                 <h1 className='subheading'>Applying the Palette</h1>
-                <div className='grid grid-cols-12 gap-12'>
+                <div className='sm:grid grid-cols-12 gap-12'>
                     <div className='col-span-6 bg-red-500'>
                         <div>description text here</div>
                     </div>

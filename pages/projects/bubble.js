@@ -16,6 +16,7 @@ import BubWire from '@/components/bubble/BubWire'
 import BubTest from '@/components/bubble/BubTest'
 import BubSUS from '@/components/bubble/BubSUS'
 import BubSystems from '@/components/bubble/BubSystems'
+import BubChange from '@/components/bubble/BubChange'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -69,7 +70,7 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
                 <BubPersonas />
                 </div>
             
-            <BubHTA />
+            {/* <BubHTA /> */}
             <BubIA />
             </section>
             <section>
@@ -81,15 +82,27 @@ export default function bubble({ frontMatter, authorDetails, next, prev, childre
                     </div>
                   </div>
               </div>
-              {/* <BubSketches /> */}
+              <BubSketches />
             </section>
             <section>
               <BubWire></BubWire>
+            </section>
+            <section className='bg-pink-500'>
+              Hi-fi1 goes here
             </section>
             <section>
               <BubTest />
             </section>
             <BubSystems />
+            <section className='bg-pink-500'>
+              hi-fi2 goes here
+            </section>
+            <section>
+              <BubChange />
+            </section>
+            <section>
+            <div className="bg-blue-500 w-full h-20"> Demonstration </div>
+            </section>
           </main>
         </div>
       </article>

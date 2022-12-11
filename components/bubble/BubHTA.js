@@ -2,7 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import Image from 'next/image';
 
 const BubHTA = () => {
-    return ( <Tabs className='border-b border-gray-200 dark:border-gray-700 pb-8'>
+    return ( <Tabs className='border-b border-gray-200 dark:border-gray-700 pb-6'>
         <TabList>
           <Tab>Rosie</Tab>
           <Tab>Samia</Tab>

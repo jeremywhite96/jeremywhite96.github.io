@@ -4,7 +4,29 @@
 
 .backgrounds {
 @apply dark:bg-gray-900 bg-white
-},
+}
+
+.carouselflow {
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 24x;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.carouselflow .item {
+  scroll-snap-align: start;
+  height: 200px;
+  background: red;
+  flex-shrink: 0;
+}
+
+.carouselflow .item90 {
+  scroll-snap-align: start;
+  height: 200px;
+  width: 90%;
+  background: red;
+  flex-shrink: 0;
+}
 
 .task-list-item::before {
   @apply hidden;
