@@ -4,7 +4,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-import Rotatehead from '@/components/rotatehead'
+import Rotatehead from '@/components/Rotatehead'
 import NewsletterForm from '@/components/NewsletterForm'
 import Buttonlink from '@/components/Buttonlink'
 
