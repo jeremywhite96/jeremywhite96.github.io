@@ -1,6 +1,6 @@
 import { left, up } from 'inquirer/lib/utils/readline'
 import React from 'react'
-import TextTransition, { presets } from '@/react-text-transition'
+import TextTransition, { presets } from './react-text-transition'
 import siteMetadata from '@/data/siteMetadata'
 
 const TEXTS = [
