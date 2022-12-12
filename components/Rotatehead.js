@@ -1,6 +1,6 @@
 import { left, up } from 'inquirer/lib/utils/readline'
 import React from 'react'
-import TextTransition, { presets } from 'react-text-transition'
+import TextTransition, { presets } from '@/react-text-transition'
 import siteMetadata from '@/data/siteMetadata'
 
 const TEXTS = [
@@ -35,7 +35,7 @@ const Rotatehead = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+      <div className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 inline-block">
         <TextTransition springConfig={presets.stiff} inline={true}>
           {TEXTS[index % TEXTS.length]}
         </TextTransition>
@@ -43,8 +43,6 @@ const Rotatehead = () => {
       </div>
       <div className="text-l mt-4 font-light md:text-xl">
         Welcome to my website.
-        {/* {siteMetadata.description} */}
-        {/* Automatic description snippet */}
       </div>
     </div>
   )
